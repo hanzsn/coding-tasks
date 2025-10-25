@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    button {
+      font-size: 1em;
+      padding: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button id="btn">Enter</button>
+    <script>
+      const body = document.body;
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        if (
+          body.style.backgroundColor == "white" ||
+          body.style.backgroundColor == ""
+        ) {
+          body.style.backgroundColor = "green";
+        } else if (body.style.backgroundColor == "green") {
+          body.style.backgroundColor = "blue";
+        } else {
+          body.style.backgroundColor = "white";
+        }
+      });
+
+      // task-02: Button that switches page background between 2 colors
+    </script>
+  </body>
+</html>
