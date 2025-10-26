@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      gap: 10px;
+      font-size: 2em;
+    }
+
+    button {
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    div {
+      display: flex;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      height: 20px;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+  <body>
+    <div id="myDiv">This is a div!</div>
+    <button id="btn">Show</button>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const myDiv = document.getElementById("myDiv");
+
+      btn.addEventListener("click", () => {
+        if (myDiv.style.display === "none" || myDiv.style.display === "") {
+          myDiv.style.display = "flex";
+          btn.textContent = "Hide";
+        } else if (myDiv.style.display === "flex") {
+          myDiv.style.display = "none";
+          btn.textContent = "Show";
+        } else {
+          myDiv.style.display = "none";
+          btn.textContent = "Show";
+        }
+      });
+
+      // task-03: Button that shows/hides a div
+    </script>
+  </body>
+</html>
