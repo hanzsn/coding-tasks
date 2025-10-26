@@ -1,4 +1,4 @@
-#beginner-task-vanilla.js
+# beginner-task-vanilla.js
 
 01 - Change Text on Button Click
 Create a button that changes a paragraph's text when clicked
