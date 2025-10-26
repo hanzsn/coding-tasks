@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-size: 2em;
+    }
+
+    button {
+      font-size: 1em;
+      padding: 5px 20px 5px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <p>Click Counter Button that counts how many times it's been clicked</p>
+    <button id="counterBtn">0</button>
+    <script>
+      const counterBtn = document.querySelector("#counterBtn");
+      const count = 1;
+
+      counterBtn.addEventListener("click", () => {
+        count = counterBtn.textContent++;
+      });
+    </script>
+  </body>
+</html>
