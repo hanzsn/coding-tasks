@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 1em;
+    }
+  </style>
+  <body>
+    <input type="text" name="" id="inp" readonly style="color: black" />
+    <button id="generatorBtn">Generate</button>
+    <script>
+      const inp = document.getElementById("inp");
+      const generatorbtn = document.getElementById("generatorBtn");
+
+      const min = 100000;
+      const max = 999999;
+      generatorbtn.onclick = function () {
+        let randomNum = Math.floor(Math.random() * max - min) + min;
+        inp.value = randomNum;
+      };
+    </script>
+  </body>
+</html>
