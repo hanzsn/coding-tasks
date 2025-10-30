@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>RPS Game</title>
+  </head>
+  <body>
+    <section class="home-page">
+      <div class="wrapper">
+        <h1>RPS GAME</h1>
+        <p>
+          Welcome to RPS Game!, Can you outsmart the computer? Test your
+          strategy <br />
+          and see if you have what it takes to win!
+        </p>
+        <button class="startBtn">Start</button>
+        <p>
+          <strong>How to play?</strong><br /><br />- Click Start to begin.
+          <br />
+          - Choose Rock, Paper, or Scissor by clicking the corresponding button.
+          <br />
+          - The computer will make its move automatically. <br />
+          - The first player to reach 5 points wins. <br />
+          - When the game ends, just reload to play again.
+        </p>
+      </div>
+    </section>
+    <main class="main-page">
+      <h1 class="rps">RPS GAME</h1>
+      <p>
+        Can you predict your opponent's next move? Let's find out — make your
+        choice!
+      </p>
+      <div class="rps-wrapper">
+        <div class="rock">
+          <img src="./img/android-chrome-192x192.png" alt="rock" />
+        </div>
+        <div class="paper">
+          <img src="./img/1325806-200.png" alt="paper" />
+        </div>
+        <div class="scissor">
+          <img src="./img/apple-touch-icon.png" alt="scissor" />
+        </div>
+      </div>
+      <span class="result"></span>
+      <span class="updateScore"></span>
+      <button class="resetBtn">play Again</button>
+    </main>
+    <script src="rps-script.js"></script>
+  </body>
+</html>
